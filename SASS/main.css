@@ -686,23 +686,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 50px, 100% 250px, 0 250px);
+          clip-path: polygon(0 0, 100% 50px, 100% 250px, 0 250px);
   position: absolute;
+  z-index: 10;
   left: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
   width: 100%;
-  height: auto;
+  height: 250px;
   color: #f2f2f2;
-}
-
-@media (max-width: 480px) {
-  .footerContainer {
-    width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -712,7 +709,13 @@
   }
 }
 
-.footerContainer h1 {
+@media (max-width: 480px) {
+  .footerContainer {
+    width: 100%;
+  }
+}
+
+.footerContainer h2 {
   font-family: "Henny Penny";
   width: 100%;
   word-spacing: 2px;
@@ -728,44 +731,51 @@
   text-align: left;
 }
 
-@media (max-width: 480px) {
-  .footerContainer h1 {
-    font-size: 1rem;
-    margin: 10px 0 0 10px;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / 3;
+@media (max-width: 1024px) {
+  .footerContainer h2 {
+    font-size: 1.4rem;
+    margin: 30px 0 0 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .footerContainer h1 {
+  .footerContainer h2 {
     font-size: 1.2rem;
   }
 }
 
-.footerContainer .copyRight {
-  position: relative;
-  margin-bottom: 10px;
-  display: block;
-  font-size: 1em;
-  text-align: center;
-  -ms-grid-row: 3;
-  grid-row: 3 / 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
+@media (max-width: 480px) {
+  .footerContainer h2 {
+    font-size: 1rem;
+    margin: 20px 0 0 10px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
 }
 
-@media (max-width: 480px) {
-  .footerContainer .copyRight {
-    font-size: 0.7em;
-  }
+.footerContainer .copyRight {
+  position: absolute;
+  display: block;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  word-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
   .footerContainer .copyRight {
     font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer .copyRight {
+    font-size: 0.7em;
   }
 }
 
@@ -780,23 +790,17 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
   width: 60px;
-  margin-left: 0px;
-  margin-bottom: 0px;
+  margin-left: 50px;
+  margin-top: 20px;
   padding-left: 0;
 }
 
 @media (max-width: 768px) {
   .footerContainer .footerLinks {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
     margin-left: 20px;
   }
 }
@@ -811,101 +815,124 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.footerContainer .footerLinks li .iconF {
-  margin-right: 5px;
-  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
   .footerContainer .footerLinks li {
     height: 20px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer .footerLinks li {
+    margin-bottom: 3px;
   }
 }
 
 .footerContainer .footerLinks li a {
   color: #f2f2f2;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
 @media (max-width: 768px) {
   .footerContainer .footerLinks li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer .footerLinks li a {
     font-size: 0.8rem;
   }
 }
 
-.footerContainer #newsletterForm {
-  display: block;
-  width: 350px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  padding: 5%;
+.posRelative {
+  position: relative;
 }
 
-@media (max-width: 480px) {
-  .footerContainer #newsletterForm {
-    width: 300px;
-    padding: 0;
+.posRelative .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  z-index: 15;
+  top: -5px;
+  right: 100px;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+@media (max-width: 1024px) {
+  .posRelative .socialMedia {
+    top: -7px;
   }
 }
 
 @media (max-width: 768px) {
-  .footerContainer #newsletterForm {
-    padding: 25px;
+  .posRelative .socialMedia {
+    top: 0px;
+    right: 40px;
+    -webkit-transform: rotate(3.5deg);
+            transform: rotate(3.5deg);
   }
-}
-
-.footerContainer #newsletterForm .text1 {
-  font-size: 1.6em;
 }
 
 @media (max-width: 480px) {
-  .footerContainer #newsletterForm .text1 {
-    font-size: 0.9em;
+  .posRelative .socialMedia {
+    top: 8px;
+    right: 15px;
+    -webkit-transform: rotate(4.8deg);
+            transform: rotate(4.8deg);
   }
+}
+
+.posRelative .socialMedia a {
+  margin: 5px;
+}
+
+.posRelative .socialMedia a i {
+  font-size: 40px;
+  margin: 20px;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
-  .footerContainer #newsletterForm .text1 {
-    font-size: 1.3em;
+  .posRelative .socialMedia a i {
+    font-size: 30px;
+    margin: 15px;
   }
-}
-
-.footerContainer #newsletterForm .text2 {
-  font-size: 1.2em;
 }
 
 @media (max-width: 480px) {
-  .footerContainer #newsletterForm .text2 {
-    font-size: 0.6em;
+  .posRelative .socialMedia a i {
+    font-size: 25px;
+    margin: 10px;
   }
 }
 
-@media (max-width: 768px) {
-  .footerContainer #newsletterForm .text2 {
-    font-size: 0.9em;
-  }
+.posRelative .socialMedia a .fa-facebook-f:hover {
+  color: #627cff;
 }
 
-.footerContainer #newsletterForm #inputFooter {
-  width: 170px;
-  height: 30px;
-  font-size: 1rem;
+.posRelative .socialMedia a .fa-instagram-square:hover {
+  color: #e33ce3;
 }
 
-.footerContainer #newsletterForm #submitFooter {
-  font-size: 0.8rem;
-  font-family: "Roboto", sans-serif;
-  padding: 5px;
-  background-color: #8cbf3f;
-  border: none;
-  border-radius: 10px;
+.posRelative .socialMedia a .fa-youtube:hover {
+  color: #e90000;
+}
+
+.posRelative .socialMedia a .fa-twitter:hover {
+  color: #00dede;
 }
 
 * {
