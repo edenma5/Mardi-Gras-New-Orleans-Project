@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+#aboutSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 40px auto 100px;
+    padding: 40px;
+    background: linear-gradient(to left, #9453a6c0, #8cbf3fc0, #f2cc0fc0);
+    box-shadow: 2px 2px 15px #000;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    @include mobile {
+        width: 100%;
+    }
+
+
+    h1 {
+        text-align: center;
+        font-family: $ffTitle2;
+        color: $blackColor;
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 15px $yellowColor;
+        letter-spacing: 3px;
+
+        @include desktop {
+            font-size: 3rem;
+        }
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
+
+        @include mobile {
+            font-size: 2rem;
+        }
+    }
+
+    .box1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px 5px 20px 5px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        h2 {
+            display: block;
+            width: 30%;
+            align-self: center;
+            text-align: center;
+            font-family: $ffTitle1;
+            color: $blackColor;
+            font-size: 2rem;
+            word-spacing: 2px;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 15px $whiteColor;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+
+            @include tablet {
+                font-size: 1.2rem;
+            }
+
+            @include mobile {
+                font-size: 1.4rem;
+                width: 100%;
+            }
+        }
+
+        p {
+            text-align: justify;
+            font-family: $ffText;
+            color: $blackColor;
+            padding: 30px;
+            margin: 20px 50px;
+            width: 70%;
+            align-self: center;
+            line-height: 1.5;
+            font-size: 1.2em;
+            background-color: #f2f2f279;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 2px 2px 15px #000;
+
+            @include desktop {
+                font-size: 1em;
+                margin: 20px 25px;
+            }
+
+            @include tablet {
+                font-size: 0.8em;
+                margin: 20px 20px;
+            }
+
+            @include mobile {
+                width: 90%;
+            }
+        }
+
+        img {
+            width: 30%;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+            transition: 0.4s;
+            box-shadow: 2px 2px 15px #000;
+            align-self: center;
+
+            @include desktop {
+                margin: 0;
+            }
+
+            @include mobile {
+                width: 60%;
+                margin: 15px;
+            }
+
+            &:hover {
+                transform: scale(120%);
+            }
+        }
+    }
+
+    .box2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 15px 5px 20px 5px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        h2 {
+            display: block;
+            width: 30%;
+            align-self: center;
+            text-align: center;
+            font-family: $ffTitle1;
+            color: $blackColor;
+            font-size: 2rem;
+            word-spacing: 2px;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 15px $whiteColor;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+
+            @include tablet {
+                font-size: 1.2rem;
+            }
+
+            @include mobile {
+                font-size: 1.4rem;
+                width: 100%;
+            }
+        }
+
+        p {
+            text-align: justify;
+            font-family: $ffText;
+            color: $blackColor;
+            padding: 30px;
+            margin: 20px 50px;
+            width: 70%;
+            align-self: center;
+            line-height: 1.5;
+            font-size: 1.2em;
+            background-color: #f2f2f279;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 2px 2px 15px #000;
+
+            @include desktop {
+                font-size: 1em;
+                margin: 20px 25px;
+            }
+
+            @include tablet {
+                font-size: 0.8em;
+                margin: 20px 20px;
+            }
+
+            @include mobile {
+                width: 90%;
+            }
+        }
+
+        img {
+            width: 30%;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+            transition: 0.4s;
+            box-shadow: 2px 2px 15px #000;
+            align-self: center;
+
+            @include desktop {
+                margin: 0;
+            }
+
+            @include mobile {
+                width: 60%;
+                margin: 15px;
+            }
+
+            &:hover {
+                transform: scale(120%);
+            }
+        }
+    }
+
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px 5px 20px 5px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        h2 {
+            display: block;
+            width: 30%;
+            align-self: center;
+            text-align: center;
+            font-family: $ffTitle1;
+            color: $blackColor;
+            font-size: 2rem;
+            word-spacing: 2px;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 15px $whiteColor;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+
+            @include tablet {
+                font-size: 1.2rem;
+            }
+
+            @include mobile {
+                font-size: 1.4rem;
+                width: 100%;
+            }
+        }
+
+        p {
+            text-align: justify;
+            font-family: $ffText;
+            color: $blackColor;
+            padding: 30px;
+            margin: 20px 50px;
+            width: 70%;
+            align-self: center;
+            line-height: 1.5;
+            font-size: 1.2em;
+            background-color: #f2f2f279;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 2px 2px 15px #000;
+
+            @include desktop {
+                font-size: 1em;
+                margin: 20px 25px;
+            }
+
+            @include tablet {
+                font-size: 0.8em;
+                margin: 20px 20px;
+            }
+
+            @include mobile {
+                width: 90%;
+            }
+        }
+
+        img {
+            width: 30%;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+            transition: 0.4s;
+            box-shadow: 2px 2px 15px #000;
+            align-self: center;
+
+            @include desktop {
+                margin: 0;
+            }
+
+            @include mobile {
+                width: 60%;
+                margin: 15px;
+            }
+
+            &:hover {
+                transform: scale(120%);
+            }
+        }
+    }
+
+    .box4 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 15px 5px 20px 5px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        h2 {
+            display: block;
+            width: 30%;
+            align-self: center;
+            text-align: center;
+            font-family: $ffTitle1;
+            color: $blackColor;
+            font-size: 2rem;
+            word-spacing: 2px;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 15px $whiteColor;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+
+            @include tablet {
+                font-size: 1.2rem;
+            }
+
+            @include mobile {
+                font-size: 1.4rem;
+                width: 100%;
+            }
+        }
+
+        p {
+            text-align: justify;
+            font-family: $ffText;
+            color: $blackColor;
+            padding: 30px;
+            margin: 20px 50px;
+            width: 70%;
+            align-self: center;
+            line-height: 1.5;
+            font-size: 1.2em;
+            background-color: #f2f2f279;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 2px 2px 15px #000;
+
+            @include desktop {
+                font-size: 1em;
+                margin: 20px 25px;
+            }
+
+            @include tablet {
+                font-size: 0.8em;
+                margin: 20px 20px;
+            }
+
+            @include mobile {
+                width: 90%;
+            }
+        }
+
+        img {
+            width: 30%;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+            transition: 0.4s;
+            box-shadow: 2px 2px 15px #000;
+            align-self: center;
+
+            @include desktop {
+                margin: 0;
+            }
+
+            @include mobile {
+                width: 60%;
+                margin: 15px;
+            }
+
+            &:hover {
+                transform: scale(120%);
+            }
+        }
+    }
+
+    .box5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px 5px 20px 5px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        h2 {
+            display: block;
+            width: 30%;
+            align-self: center;
+            text-align: center;
+            font-family: $ffTitle1;
+            color: $blackColor;
+            font-size: 2rem;
+            word-spacing: 2px;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            text-shadow: 2px 2px 15px $whiteColor;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+
+            @include tablet {
+                font-size: 1.2rem;
+            }
+
+            @include mobile {
+                font-size: 1.4rem;
+                width: 100%;
+            }
+        }
+
+        p {
+            text-align: justify;
+            font-family: $ffText;
+            color: $blackColor;
+            padding: 30px;
+            margin: 20px 50px;
+            width: 70%;
+            align-self: center;
+            line-height: 1.5;
+            font-size: 1.2em;
+            background-color: #f2f2f279;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 2px 2px 15px #000;
+
+            @include desktop {
+                font-size: 1em;
+                margin: 20px 25px;
+            }
+
+            @include tablet {
+                font-size: 0.8em;
+                margin: 20px 20px;
+            }
+
+            @include mobile {
+                width: 90%;
+            }
+        }
+
+        img {
+            width: 30%;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid white;
+            transition: 0.4s;
+            box-shadow: 2px 2px 15px #000;
+            align-self: center;
+
+            @include desktop {
+                margin: 0;
+            }
+
+            @include mobile {
+                width: 60%;
+                margin: 15px;
+            }
+
+            &:hover {
+                transform: scale(120%);
+            }
+        }
+    }
+}
