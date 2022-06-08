@@ -1,5 +1,5 @@
 //Countdown Timer 
-let countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+let countDownDate = new Date("Feb 21, 2023 08:00:00").getTime();
 
 let x = setInterval(function () {
 
@@ -12,8 +12,10 @@ let x = setInterval(function () {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    let time = `${days} : ${hours} : ${minutes} : ${seconds}`;
-    document.getElementById('countdownTimer').innerText = time;
+    document.querySelector('.days').innerText = days;
+    document.querySelector('.hours').innerText = hours;
+    document.querySelector('.minutes').innerText = minutes;
+    document.querySelector('.seconds').innerText = seconds;
 
     if (distance < 0) {
         clearInterval(x);

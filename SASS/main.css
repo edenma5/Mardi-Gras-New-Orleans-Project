@@ -2423,7 +2423,7 @@ html {
 
 #mainTitle {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 200px;
   font-family: "Pattaya";
   text-shadow: 6px 6px 10px #0d0d0d;
   word-spacing: 1.5px;
@@ -2510,35 +2510,33 @@ html {
 }
 
 .timer {
-  padding: 5px;
-  margin: 30px 75% 0px;
-  position: relative;
-  background-color: #8cbf3fd0;
-  border-radius: 30px;
-  width: 300px;
-  height: 120px;
+  padding: 15px;
+  position: absolute;
+  top: 18%;
+  right: 2%;
+  background-color: #8cbf3fda;
+  border-radius: 20px;
+  border: 0.5px solid #000;
+  width: 350px;
+  height: 165px;
   color: #0d0d0d;
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
   text-align: center;
-}
-
-@media (max-width: 1024px) {
-  .timer {
-    margin: 30px 65% 0px;
-  }
 }
 
 @media (max-width: 768px) {
   .timer {
-    margin: 40px 55% 0px;
-    height: 100px;
-    width: 270px;
+    width: 320px;
+    height: 145px;
   }
 }
 
 @media (max-width: 480px) {
   .timer {
-    height: 80px;
-    width: 200px;
+    width: 280px;
+    height: 135px;
+    padding: 10px;
   }
 }
 
@@ -2560,24 +2558,30 @@ html {
 
 @media (max-width: 480px) {
   .timer h3 {
-    font-size: 0.8rem;
-  }
-}
-
-.timer h6 {
-  word-spacing: 8px;
-  font-size: 1rem;
-}
-
-@media (max-width: 480px) {
-  .timer h6 {
-    word-spacing: 0px;
-    font-size: 0.7em;
+    font-size: 1rem;
   }
 }
 
 .timer #countdownTimer {
-  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -2594,7 +2598,159 @@ html {
 
 @media (max-width: 480px) {
   .timer #countdownTimer {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+.timer #countdownTimer .days {
+  padding: 5px;
+  margin-right: 3px;
+  width: 65px;
+  height: 75px;
+  background-color: #f2cc0f6d;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  border: 1px solid #0d0d0d;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .timer #countdownTimer .days {
+    width: 58px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .days {
+    width: 53px;
+    height: 60px;
+  }
+}
+
+.timer #countdownTimer .days::before {
+  content: 'Days';
+  display: block;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .days::before {
+    font-size: 0.8rem;
+  }
+}
+
+.timer #countdownTimer .hours {
+  padding: 5px;
+  margin-right: 3px;
+  width: 65px;
+  height: 75px;
+  background-color: #f2cc0f6d;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  border: 1px solid #0d0d0d;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .timer #countdownTimer .hours {
+    width: 58px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .hours {
+    width: 53px;
+    height: 60px;
+  }
+}
+
+.timer #countdownTimer .hours::before {
+  content: 'Hours';
+  display: block;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .hours::before {
+    font-size: 0.8rem;
+  }
+}
+
+.timer #countdownTimer .minutes {
+  padding: 5px;
+  margin-right: 3px;
+  width: 65px;
+  height: 75px;
+  background-color: #f2cc0f6d;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  border: 1px solid #0d0d0d;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .timer #countdownTimer .minutes {
+    width: 58px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .minutes {
+    width: 53px;
+    height: 60px;
+  }
+}
+
+.timer #countdownTimer .minutes::before {
+  content: 'Min';
+  display: block;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .minutes::before {
+    font-size: 0.8rem;
+  }
+}
+
+.timer #countdownTimer .seconds {
+  padding: 5px;
+  margin-right: 3px;
+  width: 65px;
+  height: 75px;
+  background-color: #f2cc0f6d;
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  border: 1px solid #0d0d0d;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .timer #countdownTimer .seconds {
+    width: 58px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .seconds {
+    width: 53px;
+    height: 60px;
+  }
+}
+
+.timer #countdownTimer .seconds::before {
+  content: 'Sec';
+  display: block;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .timer #countdownTimer .seconds::before {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
