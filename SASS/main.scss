@@ -41,6 +41,19 @@
     letter-spacing: 4px;
     font-weight: lighter;
 
+    @include desktop {
+        font-size: 5rem;
+    }
+
+    @include tablet {
+        font-size: 3.5rem;
+    }
+
+    @include mobile {
+        font-size: 2.1rem;
+        margin-top: 50px;
+    }
+
     h1 {
         display: inline;
         font-size: 7rem;
@@ -91,206 +104,204 @@
         }
     }
 
-    @include desktop {
-        font-size: 5rem;
-    }
-
-    @include tablet {
-        font-size: 3.5rem;
-    }
-
-    @include mobile {
-        font-size: 2.1rem;
-    }
 }
 
-.timer {
-    padding: 15px;
-    margin-top: 40px;
-    margin-left: 50px;
-    background-color: #8cbf3fda;
-    border-radius: 20px;
-    border: 0.5px solid #000;
-    width: 350px;
-    height: 165px;
-    color: $blackColor;
-    box-shadow: 2px 2px 10px #000;
-    text-align: center;
-
-    @include desktop {}
-
-    @include tablet {
-        width: 320px;
-        height: 145px;
-    }
+#timerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 30px 20px 0px;
 
     @include mobile {
-        width: 280px;
-        height: 135px;
-        padding: 10px;
+        margin-top: 40px;
     }
 
-    h3 {
-        font-size: 1.4rem;
+    .timer {
+        padding: 15px;
+        background-color: #8cbf3fda;
+        border-radius: 20px;
+        border: 0.5px solid #000;
+        width: 350px;
+        height: 165px;
+        color: $blackColor;
+        box-shadow: 2px 2px 10px #000;
+        text-align: center;
 
-        @include desktop {
-            font-size: 1.3rem;
-        }
+        @include desktop {}
 
         @include tablet {
-            font-size: 1.1rem;
+            width: 320px;
+            height: 145px;
         }
 
         @include mobile {
-            font-size: 1rem;
+            width: 280px;
+            height: 135px;
+            padding: 10px;
         }
-    }
 
-    #countdownTimer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 1.5rem;
-        box-shadow: 1px 1px 5px #000;
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 10px;
-        padding: 10px;
+        h3 {
+            font-size: 1.4rem;
 
-        @include desktop {
+            @include desktop {
+                font-size: 1.3rem;
+            }
+
+            @include tablet {
+                font-size: 1.1rem;
+            }
+
+            @include mobile {
+                font-size: 1rem;
+            }
+        }
+
+        #countdownTimer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
             font-size: 1.5rem;
-        }
-
-        @include tablet {
-            font-size: 1.3rem;
-        }
-
-        @include mobile {
-            font-size: 1.1rem;
-
-        }
-
-
-        .days {
-            padding: 5px;
-            margin-right: 3px;
-            width: 65px;
-            height: 75px;
-            background-color: #f2cc0f6d;
             box-shadow: 1px 1px 5px #000;
-            border: 1px solid $blackColor;
-            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            padding: 10px;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
 
             @include tablet {
-                width: 58px;
-                height: 65px;
+                font-size: 1.3rem;
             }
 
             @include mobile {
-                width: 53px;
-                height: 60px;
+                font-size: 1.1rem;
+
             }
 
-            &::before {
-                content: 'Days';
-                display: block;
-                font-size: 1rem;
+
+            .days {
+                padding: 5px;
+                margin-right: 3px;
+                width: 65px;
+                height: 75px;
+                background-color: #f2cc0f6d;
+                box-shadow: 1px 1px 5px #000;
+                border: 1px solid $blackColor;
+                border-radius: 20px;
+
+                @include tablet {
+                    width: 58px;
+                    height: 65px;
+                }
 
                 @include mobile {
-                    font-size: 0.8rem;
+                    width: 53px;
+                    height: 60px;
+                }
+
+                &::before {
+                    content: 'Days';
+                    display: block;
+                    font-size: 1rem;
+
+                    @include mobile {
+                        font-size: 0.8rem;
+                    }
                 }
             }
-        }
 
-        .hours {
-            padding: 5px;
-            margin-right: 3px;
-            width: 65px;
-            height: 75px;
-            background-color: #f2cc0f6d;
-            box-shadow: 1px 1px 5px #000;
-            border: 1px solid $blackColor;
-            border-radius: 20px;
+            .hours {
+                padding: 5px;
+                margin-right: 3px;
+                width: 65px;
+                height: 75px;
+                background-color: #f2cc0f6d;
+                box-shadow: 1px 1px 5px #000;
+                border: 1px solid $blackColor;
+                border-radius: 20px;
 
-            @include tablet {
-                width: 58px;
-                height: 65px;
-            }
-
-            @include mobile {
-                width: 53px;
-                height: 60px;
-            }
-
-            &::before {
-                content: 'Hours';
-                display: block;
-                font-size: 1rem;
+                @include tablet {
+                    width: 58px;
+                    height: 65px;
+                }
 
                 @include mobile {
-                    font-size: 0.8rem;
+                    width: 53px;
+                    height: 60px;
+                }
+
+                &::before {
+                    content: 'Hours';
+                    display: block;
+                    font-size: 1rem;
+
+                    @include mobile {
+                        font-size: 0.8rem;
+                    }
                 }
             }
-        }
 
-        .minutes {
-            padding: 5px;
-            margin-right: 3px;
-            width: 65px;
-            height: 75px;
-            background-color: #f2cc0f6d;
-            box-shadow: 1px 1px 5px #000;
-            border: 1px solid $blackColor;
-            border-radius: 20px;
+            .minutes {
+                padding: 5px;
+                margin-right: 3px;
+                width: 65px;
+                height: 75px;
+                background-color: #f2cc0f6d;
+                box-shadow: 1px 1px 5px #000;
+                border: 1px solid $blackColor;
+                border-radius: 20px;
 
-            @include tablet {
-                width: 58px;
-                height: 65px;
-            }
-
-            @include mobile {
-                width: 53px;
-                height: 60px;
-            }
-
-            &::before {
-                content: 'Min';
-                display: block;
-                font-size: 1rem;
+                @include tablet {
+                    width: 58px;
+                    height: 65px;
+                }
 
                 @include mobile {
-                    font-size: 0.8rem;
+                    width: 53px;
+                    height: 60px;
+                }
+
+                &::before {
+                    content: 'Min';
+                    display: block;
+                    font-size: 1rem;
+
+                    @include mobile {
+                        font-size: 0.8rem;
+                    }
                 }
             }
-        }
 
-        .seconds {
-            padding: 5px;
-            margin-right: 3px;
-            width: 65px;
-            height: 75px;
-            background-color: #f2cc0f6d;
-            box-shadow: 1px 1px 5px #000;
-            border: 1px solid $blackColor;
-            border-radius: 20px;
+            .seconds {
+                padding: 5px;
+                margin-right: 3px;
+                width: 65px;
+                height: 75px;
+                background-color: #f2cc0f6d;
+                box-shadow: 1px 1px 5px #000;
+                border: 1px solid $blackColor;
+                border-radius: 20px;
 
-            @include tablet {
-                width: 58px;
-                height: 65px;
-            }
-
-            @include mobile {
-                width: 53px;
-                height: 60px;
-            }
-
-            &::before {
-                content: 'Sec';
-                display: block;
-                font-size: 1rem;
+                @include tablet {
+                    width: 58px;
+                    height: 65px;
+                }
 
                 @include mobile {
-                    font-size: 0.8rem;
+                    width: 53px;
+                    height: 60px;
+                }
+
+                &::before {
+                    content: 'Sec';
+                    display: block;
+                    font-size: 1rem;
+
+                    @include mobile {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }

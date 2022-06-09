@@ -2432,6 +2432,25 @@ html {
   font-weight: lighter;
 }
 
+@media (max-width: 1024px) {
+  #mainTitle {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #mainTitle {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #mainTitle {
+    font-size: 2.1rem;
+    margin-top: 50px;
+  }
+}
+
 #mainTitle h1 {
   display: inline;
   font-size: 7rem;
@@ -2492,28 +2511,28 @@ html {
   color: #f2f2f2;
 }
 
-@media (max-width: 1024px) {
-  #mainTitle {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #mainTitle {
-    font-size: 3.5rem;
-  }
+#timerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 30px 20px 0px;
 }
 
 @media (max-width: 480px) {
-  #mainTitle {
-    font-size: 2.1rem;
+  #timerContainer {
+    margin-top: 40px;
   }
 }
 
-.timer {
+#timerContainer .timer {
   padding: 15px;
-  margin-top: 40px;
-  margin-left: 50px;
   background-color: #8cbf3fda;
   border-radius: 20px;
   border: 0.5px solid #000;
@@ -2526,43 +2545,43 @@ html {
 }
 
 @media (max-width: 768px) {
-  .timer {
+  #timerContainer .timer {
     width: 320px;
     height: 145px;
   }
 }
 
 @media (max-width: 480px) {
-  .timer {
+  #timerContainer .timer {
     width: 280px;
     height: 135px;
     padding: 10px;
   }
 }
 
-.timer h3 {
+#timerContainer .timer h3 {
   font-size: 1.4rem;
 }
 
 @media (max-width: 1024px) {
-  .timer h3 {
+  #timerContainer .timer h3 {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .timer h3 {
+  #timerContainer .timer h3 {
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .timer h3 {
+  #timerContainer .timer h3 {
     font-size: 1rem;
   }
 }
 
-.timer #countdownTimer {
+#timerContainer .timer #countdownTimer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2585,24 +2604,24 @@ html {
 }
 
 @media (max-width: 1024px) {
-  .timer #countdownTimer {
+  #timerContainer .timer #countdownTimer {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .timer #countdownTimer {
+  #timerContainer .timer #countdownTimer {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer {
+  #timerContainer .timer #countdownTimer {
     font-size: 1.1rem;
   }
 }
 
-.timer #countdownTimer .days {
+#timerContainer .timer #countdownTimer .days {
   padding: 5px;
   margin-right: 3px;
   width: 65px;
@@ -2615,32 +2634,32 @@ html {
 }
 
 @media (max-width: 768px) {
-  .timer #countdownTimer .days {
+  #timerContainer .timer #countdownTimer .days {
     width: 58px;
     height: 65px;
   }
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .days {
+  #timerContainer .timer #countdownTimer .days {
     width: 53px;
     height: 60px;
   }
 }
 
-.timer #countdownTimer .days::before {
+#timerContainer .timer #countdownTimer .days::before {
   content: 'Days';
   display: block;
   font-size: 1rem;
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .days::before {
+  #timerContainer .timer #countdownTimer .days::before {
     font-size: 0.8rem;
   }
 }
 
-.timer #countdownTimer .hours {
+#timerContainer .timer #countdownTimer .hours {
   padding: 5px;
   margin-right: 3px;
   width: 65px;
@@ -2653,32 +2672,32 @@ html {
 }
 
 @media (max-width: 768px) {
-  .timer #countdownTimer .hours {
+  #timerContainer .timer #countdownTimer .hours {
     width: 58px;
     height: 65px;
   }
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .hours {
+  #timerContainer .timer #countdownTimer .hours {
     width: 53px;
     height: 60px;
   }
 }
 
-.timer #countdownTimer .hours::before {
+#timerContainer .timer #countdownTimer .hours::before {
   content: 'Hours';
   display: block;
   font-size: 1rem;
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .hours::before {
+  #timerContainer .timer #countdownTimer .hours::before {
     font-size: 0.8rem;
   }
 }
 
-.timer #countdownTimer .minutes {
+#timerContainer .timer #countdownTimer .minutes {
   padding: 5px;
   margin-right: 3px;
   width: 65px;
@@ -2691,32 +2710,32 @@ html {
 }
 
 @media (max-width: 768px) {
-  .timer #countdownTimer .minutes {
+  #timerContainer .timer #countdownTimer .minutes {
     width: 58px;
     height: 65px;
   }
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .minutes {
+  #timerContainer .timer #countdownTimer .minutes {
     width: 53px;
     height: 60px;
   }
 }
 
-.timer #countdownTimer .minutes::before {
+#timerContainer .timer #countdownTimer .minutes::before {
   content: 'Min';
   display: block;
   font-size: 1rem;
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .minutes::before {
+  #timerContainer .timer #countdownTimer .minutes::before {
     font-size: 0.8rem;
   }
 }
 
-.timer #countdownTimer .seconds {
+#timerContainer .timer #countdownTimer .seconds {
   padding: 5px;
   margin-right: 3px;
   width: 65px;
@@ -2729,27 +2748,27 @@ html {
 }
 
 @media (max-width: 768px) {
-  .timer #countdownTimer .seconds {
+  #timerContainer .timer #countdownTimer .seconds {
     width: 58px;
     height: 65px;
   }
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .seconds {
+  #timerContainer .timer #countdownTimer .seconds {
     width: 53px;
     height: 60px;
   }
 }
 
-.timer #countdownTimer .seconds::before {
+#timerContainer .timer #countdownTimer .seconds::before {
   content: 'Sec';
   display: block;
   font-size: 1rem;
 }
 
 @media (max-width: 480px) {
-  .timer #countdownTimer .seconds::before {
+  #timerContainer .timer #countdownTimer .seconds::before {
     font-size: 0.8rem;
   }
 }
