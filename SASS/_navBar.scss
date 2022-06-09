@@ -54,7 +54,8 @@
 
         @include mobile {
             position: absolute;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            top: 15px;
             left: 30%;
         }
     }

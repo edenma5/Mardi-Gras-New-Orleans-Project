@@ -26,8 +26,10 @@
     position: absolute;
     z-index: 2;
     font-size: 3.5rem;
+    text-align: center;
     left: 50%;
     top: 5%;
+    width: 100%;
     font-family: $ffTitle2;
     transform: translate(-50%);
     text-shadow: 2px 2px 15px $yellowColor;
@@ -122,10 +124,6 @@
     @include tablet {
         font-size: 1.4rem;
     }
-
-    @include mobile {
-        font-size: 1.5rem;
-    }
 }
 
 .name-profession .profession {
@@ -148,7 +146,8 @@
     }
 
     @include mobile {
-        font-size: 1.1em;
+        top: 45%;
+        font-size: 1em;
     }
 }
 

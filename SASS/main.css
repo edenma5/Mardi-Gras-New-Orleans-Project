@@ -70,7 +70,8 @@
 @media (max-width: 480px) {
   #navBar .navbar-brand {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    top: 15px;
     left: 30%;
   }
 }
@@ -343,6 +344,7 @@
 
 #contentParagraphs h1 {
   text-align: center;
+  width: 100%;
   font-size: 3.5rem;
   font-family: "Henny Penny";
   color: #0d0d0d;
@@ -377,6 +379,8 @@
 @media (max-width: 480px) {
   #contentParagraphs h1 {
     font-size: 2rem;
+    margin: 10px;
+    word-spacing: .5px;
   }
 }
 
@@ -461,8 +465,10 @@
   position: absolute;
   z-index: 2;
   font-size: 3.5rem;
+  text-align: center;
   left: 50%;
   top: 5%;
+  width: 100%;
   font-family: "Henny Penny";
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -587,12 +593,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  .name-profession .name {
-    font-size: 1.5rem;
-  }
-}
-
 .name-profession .profession {
   position: absolute;
   text-align: justify;
@@ -619,7 +619,8 @@
 
 @media (max-width: 480px) {
   .name-profession .profession {
-    font-size: 1.1em;
+    top: 45%;
+    font-size: 1em;
   }
 }
 
@@ -775,7 +776,7 @@
 
 @media (max-width: 480px) {
   .footerContainer .copyRight {
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
 }
 
@@ -827,7 +828,7 @@
 
 @media (max-width: 480px) {
   .footerContainer .footerLinks li {
-    margin-bottom: 3px;
+    margin-bottom: -2px;
   }
 }
 
@@ -2423,7 +2424,7 @@ html {
 
 #mainTitle {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 80px;
   font-family: "Pattaya";
   text-shadow: 6px 6px 10px #0d0d0d;
   word-spacing: 1.5px;
@@ -2511,9 +2512,8 @@ html {
 
 .timer {
   padding: 15px;
-  position: absolute;
-  top: 18%;
-  right: 2%;
+  margin-top: 40px;
+  margin-left: 50px;
   background-color: #8cbf3fda;
   border-radius: 20px;
   border: 0.5px solid #000;
