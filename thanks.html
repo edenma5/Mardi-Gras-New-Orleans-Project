@@ -27,9 +27,8 @@
         .thanks {
             position: relative;
             max-width: 600px;
-            height: auto;
-            margin: 5% auto;
-            padding: 1%;
+            margin: 150px auto;
+            padding: 10px;
             background: linear-gradient(to left, #9453a6c0, #8cbf3fc0, #f2cc0fc0);
             box-shadow: 2px 2px 15px #000;
             border-top-left-radius: 50px;
@@ -55,6 +54,48 @@
             color: #0d0d0d;
             font-style: italic;
             font-size: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .thanks {
+                width: 550px;
+            }
+
+            .thanks h3 {
+                font-size: 4.7rem;
+            }
+
+            .thanks h4 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .thanks {
+                width: 510px;
+            }
+
+            .thanks h3 {
+                font-size: 4.5rem;
+            }
+
+            .thanks h4 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thanks {
+                width: 340px;
+            }
+
+            .thanks h3 {
+                font-size: 3.6rem;
+            }
+
+            .thanks h4 {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>

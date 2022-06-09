@@ -35,17 +35,16 @@
         @include tablet {
             position: absolute;
             left: 75%;
-            top: 35%;
-            width: 150px;
-            height: 150px;
+            top: 50px;
+            width: 170px;
+            height: 170px;
         }
 
         @include mobile {
             position: absolute;
             left: 70%;
-            top: 55%;
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
         }
     }
 
@@ -55,7 +54,7 @@
         @include mobile {
             position: absolute;
             font-size: 1.1rem;
-            top: 15px;
+            top: 20px;
             left: 30%;
         }
     }
@@ -74,9 +73,11 @@
                 }
 
                 .icon {
-                    font-size: 1.8rem;
+                    font-size: 2.3rem;
                     color: $whiteColor;
                     margin-bottom: 2px;
+
+                    @include mobile {}
 
                     &:hover {
                         animation: shake 0.5s;
@@ -137,6 +138,7 @@
                     @include tablet {
                         margin: 7px 0px;
                         padding: 10px;
+                        font-size: 0.6rem;
                     }
 
                     @include mobile {
