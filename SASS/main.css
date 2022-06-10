@@ -56,7 +56,7 @@
 @media (max-width: 480px) {
   #navBar .logo {
     position: absolute;
-    left: 70%;
+    left: 65%;
     width: 120px;
     height: 120px;
   }
@@ -230,17 +230,17 @@
 
 #carouselExampleCaptions {
   margin: 40px auto;
-  max-width: 100%;
+  width: 100%;
   max-height: 800px;
   padding: 40px;
-  background: -webkit-gradient(linear, left top, right top, from(#9453a6c0), color-stop(#8cbf3fc0), to(#f2cc0fc0));
-  background: linear-gradient(to right, #9453a6c0, #8cbf3fc0, #f2cc0fc0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9453a6c0), color-stop(#8cbf3fc0), to(#f2cc0fc0));
+  background: linear-gradient(to bottom, #9453a6c0, #8cbf3fc0, #f2cc0fc0);
   -webkit-box-shadow: 2px 2px 15px #000;
           box-shadow: 2px 2px 15px #000;
-  border-top-left-radius: 150px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 150px;
-  border-bottom-left-radius: 30px;
+  /*     border-top-left-radius: 150px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 30px; */
 }
 
 @media (max-width: 1024px) {
@@ -259,8 +259,6 @@
 
 @media (max-width: 480px) {
   #carouselExampleCaptions {
-    width: 100%;
-    height: 400px;
     border-bottom-right-radius: 70px;
     border-top-left-radius: 70px;
   }
@@ -2420,6 +2418,19 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
 }
 
 .backImage {

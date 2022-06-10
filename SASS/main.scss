@@ -19,6 +19,19 @@
     box-sizing: border-box;
 }
 
+body {
+    @include tablet {
+        overflow-x: hidden;
+        position: relative;
+    }
+}
+
+html {
+    @include tablet {
+        overflow-x: hidden;
+    }
+}
+
 .backImage {
     position: fixed;
     z-index: -1;
