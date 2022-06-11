@@ -6,6 +6,10 @@
 
 html {
     height: 100%;
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 #contactSection {
@@ -26,7 +30,6 @@ html {
     }
 
     @include mobile {
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -81,7 +84,6 @@ html {
         }
 
         @include mobile {
-            width: 380px;
             margin-bottom: 30px;
         }
 
@@ -99,8 +101,6 @@ html {
                 margin-bottom: 5px;
             }
 
-            @include mobile {}
-
             label {
                 font-size: 1.5rem;
                 color: $purpleColor;
@@ -113,8 +113,6 @@ html {
                     font-size: 1.3rem;
 
                 }
-
-                @include mobile {}
             }
 
             input,
@@ -128,8 +126,6 @@ html {
                 @include tablet {
                     padding: 3px;
                 }
-
-                @include mobile {}
             }
         }
 
@@ -192,6 +188,10 @@ html {
         @include tablet {
             font-size: 1.1em;
         }
+
+        @include mobile {
+            font-size: 1rem;
+        }
     }
 
     span {
@@ -206,8 +206,6 @@ html {
         @include tablet {
             font-size: 1.2em;
         }
-
-        @include mobile {}
     }
 
     iframe {

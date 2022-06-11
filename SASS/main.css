@@ -1654,6 +1654,12 @@ html {
   height: 100%;
 }
 
+@media (max-width: 480px) {
+  html {
+    width: 100%;
+  }
+}
+
 #contactSection {
   position: relative;
   display: -ms-grid;
@@ -1681,7 +1687,6 @@ html {
 
 @media (max-width: 480px) {
   #contactSection {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1772,7 +1777,6 @@ html {
 
 @media (max-width: 480px) {
   #contactSection .contactContainer {
-    width: 380px;
     margin-bottom: 30px;
   }
 }
@@ -1910,6 +1914,12 @@ html {
 @media (max-width: 768px) {
   .contactDetails h4 {
     font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactDetails h4 {
+    font-size: 1rem;
   }
 }
 
@@ -2420,28 +2430,17 @@ html {
           box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    position: relative;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    overflow-x: hidden;
-  }
-}
-
 .backImage {
   position: fixed;
   z-index: -1;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-image: url(../Photos/628bdbe24530a.jpg);
   background-position: top;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll, local;
   background-repeat: no-repeat;
   -webkit-filter: blur(4px);
           filter: blur(4px);
