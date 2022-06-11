@@ -101,15 +101,38 @@
   }
 }
 
+#navBar #navbarTogglerDemo01 .navbar-nav .nav-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #navBar #navbarTogglerDemo01 .navbar-nav .nav-item a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 #navBar #navbarTogglerDemo01 .navbar-nav .nav-item .icon {
   font-size: 2.3rem;
   color: #f2f2f2;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 #navBar #navbarTogglerDemo01 .navbar-nav .nav-item .icon:hover {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+  -webkit-animation: shake 0.8s;
+          animation: shake 0.8s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -237,10 +260,6 @@
   background: linear-gradient(to bottom, #9453a6c0, #8cbf3fc0, #f2cc0fc0);
   -webkit-box-shadow: 2px 2px 15px #000;
           box-shadow: 2px 2px 15px #000;
-  /*     border-top-left-radius: 150px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 150px;
-    border-bottom-left-radius: 30px; */
 }
 
 @media (max-width: 1024px) {
@@ -445,12 +464,6 @@
           align-items: center;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-}
-
-@media (max-width: 480px) {
-  #fundingArea {
-    width: 100vw;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -1650,13 +1663,9 @@ html {
           box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 @media (max-width: 480px) {
   html {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1964,10 +1973,6 @@ html {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-html {
-  height: 100%;
 }
 
 #galleryContainer {
