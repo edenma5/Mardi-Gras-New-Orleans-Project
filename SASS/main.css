@@ -286,9 +286,9 @@
 #carouselExampleCaptions h1 {
   text-align: center;
   font-family: "Henny Penny";
-  color: #0d0d0d;
+  color: #f2f2f2;
   font-size: 3.5rem;
-  text-shadow: 2px 2px 15px #f2cc0f;
+  text-shadow: 4px 4px 6px #0d0d0d;
   word-spacing: 1.5px;
   letter-spacing: 3px;
 }
@@ -364,21 +364,26 @@
   width: 100%;
   font-size: 3.5rem;
   font-family: "Henny Penny";
-  color: #0d0d0d;
+  color: #f2f2f2;
   margin: 20px;
-  text-shadow: 2px 2px 15px #f2cc0f;
+  text-shadow: 4px 4px 6px #0d0d0d;
   word-spacing: 1.5px;
   letter-spacing: 3px;
 }
 
 #contentParagraphs h1 .mardiTitle {
   color: #9453a6;
-  text-shadow: 2px 2px 15px #f2f2f2;
+  text-shadow: 4px 4px 6px #0d0d0d;
 }
 
 #contentParagraphs h1 .mardiTitle2 {
+  color: #8cbf3f;
+  text-shadow: 4px 4px 6px #0d0d0d;
+}
+
+#contentParagraphs h1 .mardiTitle3 {
   color: #f2cc0f;
-  text-shadow: 2px 2px 15px #0d0d0d;
+  text-shadow: 4px 4px 6px #0d0d0d;
 }
 
 @media (max-width: 1024px) {
@@ -483,7 +488,8 @@
   font-family: "Henny Penny";
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  text-shadow: 2px 2px 15px #f2cc0f;
+  color: #f2f2f2;
+  text-shadow: 4px 4px 6px #0d0d0d;
   word-spacing: 1.5px;
   letter-spacing: 3px;
 }
@@ -987,9 +993,9 @@ html {
 #aboutSection h1 {
   text-align: center;
   font-family: "Henny Penny";
-  color: #0d0d0d;
+  color: #f2f2f2;
   font-size: 3.5rem;
-  text-shadow: 2px 2px 15px #f2cc0f;
+  text-shadow: 4px 4px 6px #0d0d0d;
   letter-spacing: 3px;
 }
 
@@ -1047,7 +1053,7 @@ html {
   word-spacing: 2px;
   letter-spacing: 3px;
   line-height: 1.5;
-  text-shadow: 2px 2px 15px #f2f2f2;
+  text-shadow: 2px 2px 5px #f2f2f2;
 }
 
 @media (max-width: 1024px) {
@@ -1176,7 +1182,7 @@ html {
   word-spacing: 2px;
   letter-spacing: 3px;
   line-height: 1.5;
-  text-shadow: 2px 2px 15px #f2f2f2;
+  text-shadow: 2px 2px 5px #f2f2f2;
 }
 
 @media (max-width: 1024px) {
@@ -1305,7 +1311,7 @@ html {
   word-spacing: 2px;
   letter-spacing: 3px;
   line-height: 1.5;
-  text-shadow: 2px 2px 15px #f2f2f2;
+  text-shadow: 2px 2px 5px #f2f2f2;
 }
 
 @media (max-width: 1024px) {
@@ -1434,7 +1440,7 @@ html {
   word-spacing: 2px;
   letter-spacing: 3px;
   line-height: 1.5;
-  text-shadow: 2px 2px 15px #f2f2f2;
+  text-shadow: 2px 2px 5px #f2f2f2;
 }
 
 @media (max-width: 1024px) {
@@ -1563,7 +1569,7 @@ html {
   word-spacing: 2px;
   letter-spacing: 3px;
   line-height: 1.5;
-  text-shadow: 2px 2px 15px #f2f2f2;
+  text-shadow: 2px 2px 5px #f2f2f2;
 }
 
 @media (max-width: 1024px) {
@@ -1719,9 +1725,9 @@ html {
   width: 100%;
   text-align: center;
   font-family: "Henny Penny";
-  color: #0d0d0d;
+  color: #f2f2f2;
   font-size: 3.5rem;
-  text-shadow: 2px 2px 15px #f2cc0f;
+  text-shadow: 4px 4px 6px #0d0d0d;
   margin-bottom: 40px;
   word-spacing: 1.5px;
   letter-spacing: 3px;
@@ -1816,11 +1822,11 @@ html {
 
 #contactSection .contactContainer .formBox label {
   font-size: 1.5rem;
-  color: #9453a6;
+  color: #0d0d0d;
   font-family: "Pattaya";
   word-spacing: 2px;
   letter-spacing: 3px;
-  text-shadow: 2px 2px 15px #f2f2f2;
+  text-shadow: 2px 2px 5px #f2f2f2;
 }
 
 @media (max-width: 768px) {
@@ -1865,8 +1871,9 @@ html {
           box-shadow: 2px 2px 5px #000;
   font-family: "Roboto", sans-serif;
   color: #9453a6;
-  font-size: 1.7rem;
-  text-shadow: 2px 2px 2px #f2f2f2;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 5px #f2f2f2;
   letter-spacing: 4px;
 }
 
@@ -2009,9 +2016,9 @@ html {
   grid-column: 1/3;
   text-align: center;
   font-family: "Henny Penny";
-  color: #0d0d0d;
+  color: #f2f2f2;
   font-size: 3.5rem;
-  text-shadow: 2px 2px 15px #f2cc0f;
+  text-shadow: 4px 4px 6px #0d0d0d;
   word-spacing: 1.5px;
   letter-spacing: 3px;
 }
@@ -2244,9 +2251,9 @@ html {
   grid-column: 1/3;
   text-align: center;
   font-family: "Henny Penny";
-  color: #0d0d0d;
+  color: #f2f2f2;
   font-size: 3.5rem;
-  text-shadow: 2px 2px 15px #f2cc0f;
+  text-shadow: 4px 4px 6px #0d0d0d;
   word-spacing: 1.5px;
   letter-spacing: 3px;
 }
@@ -2447,15 +2454,15 @@ html {
   background-size: cover;
   background-attachment: scroll, local;
   background-repeat: no-repeat;
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 
 #mainTitle {
   text-align: center;
   margin-top: 80px;
   font-family: "Pattaya";
-  text-shadow: 6px 6px 10px #0d0d0d;
+  text-shadow: 8px 8px 2px #0d0d0d;
   word-spacing: 1.5px;
   letter-spacing: 4px;
   font-weight: lighter;
@@ -2510,7 +2517,7 @@ html {
 }
 
 #mainTitle h1 .sp2 {
-  color: #f2cc0f;
+  color: #8cbf3f;
 }
 
 #mainTitle h2 {
@@ -2533,11 +2540,11 @@ html {
 }
 
 #mainTitle h2 .sp3 {
-  color: #8cbf3f;
+  color: #f2cc0f;
 }
 
 #mainTitle h2 .sp4 {
-  color: #f2f2f2;
+  color: #f2cc0f;
 }
 
 #timerContainer {

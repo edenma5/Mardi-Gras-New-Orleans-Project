@@ -32,7 +32,7 @@
     background-size: cover;
     background-attachment: scroll, local;
     background-repeat: no-repeat;
-    filter: blur(4px);
+    filter: blur(3px);
 
     @include mobile {}
 }
@@ -41,7 +41,8 @@
     text-align: center;
     margin-top: 80px;
     font-family: $ffTitle1;
-    text-shadow: 6px 6px 10px $blackColor;
+    text-shadow: 8px 8px 2px $blackColor;
+
     word-spacing: 1.5px;
     letter-spacing: 4px;
     font-weight: lighter;
@@ -83,7 +84,7 @@
         }
 
         .sp2 {
-            color: $yellowColor;
+            color: $greenColor;
         }
     }
 
@@ -102,11 +103,11 @@
         }
 
         .sp3 {
-            color: $greenColor;
+            color: $yellowColor;
         }
 
         .sp4 {
-            color: $whiteColor;
+            color: $yellowColor;
         }
     }
 }

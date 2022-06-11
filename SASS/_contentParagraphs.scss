@@ -12,20 +12,25 @@
         width: 100%;
         font-size: 3.5rem;
         font-family: $ffTitle2;
-        color: $blackColor;
+        color: $whiteColor;
         margin: 20px;
-        text-shadow: 2px 2px 15px $yellowColor;
+        text-shadow: 4px 4px 6px $blackColor;
         word-spacing: 1.5px;
         letter-spacing: 3px;
 
         .mardiTitle {
             color: $purpleColor;
-            text-shadow: 2px 2px 15px $whiteColor;
+            text-shadow: 4px 4px 6px $blackColor;
         }
 
         .mardiTitle2 {
+            color: $greenColor;
+            text-shadow: 4px 4px 6px $blackColor;
+        }
+
+        .mardiTitle3 {
             color: $yellowColor;
-            text-shadow: 2px 2px 15px $blackColor;
+            text-shadow: 4px 4px 6px $blackColor;
         }
 
         @include desktop {

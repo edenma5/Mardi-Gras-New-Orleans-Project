@@ -39,9 +39,9 @@ html {
         width: 100%;
         text-align: center;
         font-family: $ffTitle2;
-        color: $blackColor;
+        color: $whiteColor;
         font-size: 3.5rem;
-        text-shadow: 2px 2px 15px $yellowColor;
+        text-shadow: 4px 4px 6px $blackColor;
         margin-bottom: 40px;
         word-spacing: 1.5px;
         letter-spacing: 3px;
@@ -101,11 +101,11 @@ html {
 
             label {
                 font-size: 1.5rem;
-                color: $purpleColor;
+                color: $blackColor;
                 font-family: $ffTitle1;
                 word-spacing: 2px;
                 letter-spacing: 3px;
-                text-shadow: 2px 2px 15px $whiteColor;
+                text-shadow: 2px 2px 5px $whiteColor;
 
                 @include tablet {
                     font-size: 1.3rem;
@@ -147,8 +147,9 @@ html {
         box-shadow: 2px 2px 5px #000;
         font-family: $ffText;
         color: $purpleColor;
-        font-size: 1.7rem;
-        text-shadow: 2px 2px 2px $whiteColor;
+        font-weight: 900;
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 5px $whiteColor;
         letter-spacing: 4px;
 
         @include tablet {
