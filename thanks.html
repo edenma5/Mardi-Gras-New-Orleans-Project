@@ -24,10 +24,14 @@
             box-sizing: border-box;
         }
 
+        body {
+            min-height: 100%;
+        }
+
         .thanks {
             position: relative;
             max-width: 600px;
-            margin: 150px auto;
+            margin: 280px auto;
             padding: 10px;
             background: linear-gradient(to left, #9453a6c0, #8cbf3fc0, #f2cc0fc0);
             box-shadow: 2px 2px 15px #000;
@@ -55,6 +59,14 @@
             font-style: italic;
             font-size: 2rem;
         }
+
+
+        @media (max-width: 1280px) {
+            .thanks {
+                margin-bottom: 100%;
+            }
+        }
+
 
         @media (max-width: 1024px) {
             .thanks {
