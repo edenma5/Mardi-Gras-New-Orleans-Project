@@ -1,4 +1,4 @@
-#qwizPopUpBTN {
+#quizPopUpBTN {
     position: fixed;
     z-index: 110;
     right: 30px;
@@ -31,7 +31,7 @@
     }
 }
 
-#qwizContainer {
+#quizContainer {
     display: none;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@
             width: 100%;
         }
 
-        #QwizTitle {
+        #QuizTitle {
             display: block;
             width: 100%;
             height: 80px;

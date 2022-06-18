@@ -14,7 +14,7 @@
         "_contact.scss",
         "_mediaPage.scss",
         "_faq.scss",
-        "_qwiz.scss"
+        "_quiz.scss"
     ],
     "names": [],
     "file": "main.css"

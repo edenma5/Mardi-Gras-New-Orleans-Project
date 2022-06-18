@@ -1,5 +1,5 @@
-let qwizPopUpBTN = document.getElementById('qwizPopUpBTN');
-let qwizContainer = document.getElementById('qwizContainer');
+let quizPopUpBTN = document.getElementById('quizPopUpBTN');
+let quizContainer = document.getElementById('quizContainer');
 let close = document.getElementById('close');
 let btn1 = document.querySelectorAll('.btn1');
 let skip = document.getElementById('skip');
@@ -12,12 +12,12 @@ let duration = 0;
 let qaSet = document.querySelectorAll('.qa_set');
 let qaAnsRow = document.querySelectorAll('.qa_set .qa_ans_row input');
 
-qwizPopUpBTN.addEventListener('click', () => {
+quizPopUpBTN.addEventListener('click', () => {
     start();
 });
 
 function start() {
-    qwizContainer.style.display = 'flex';
+    quizContainer.style.display = 'flex';
     skip.addEventListener('click', function () {
         step();
         duration = 12;
@@ -72,5 +72,5 @@ function start() {
 };
 
 close.addEventListener('click', () => {
-    qwizContainer.style.display = 'none';
+    quizContainer.style.display = 'none';
 });
